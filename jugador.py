@@ -11,4 +11,4 @@ class Jugador:
         self.vidas += efecto
 
     def mostrar_estado(self):#se actualiza
-        print(f"Jugador: {self.nombre} | Vidas: {self.vidas}")
+        print(f"Jugador: {self.nombre} | Vidas ♥️  {self.vidas}")

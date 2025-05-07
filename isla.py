@@ -8,7 +8,7 @@ from objetos.llave import Llave
 
 class Isla: #clase isla
     def __init__(self):
-        self.mapa = [[None for _ in range(6)] for _ in range(6)] #5 * 5
+        self.mapa = [[None for _ in range(6)] for _ in range(6)] #6 * 6
         self.generar_objetos()
 
     def generar_objetos(self):
