@@ -13,6 +13,10 @@ class Isla: #clase isla
 
     def generar_objetos(self):
         objetos = [Llave(), Coco()] + [Fruta()]*3 + [Escorpion()]*3 + [Serpiente()]*3 #numero de objetos, las rocas se llenaran en vacios
+        total_celdas= 6*6
+        rocas_restantes = total_celdas - len(objetos)  # Espacios vacíos se llenarán con rocas
+        
+        objetos.extend([Roca()] * rocas_restantes) 
         random.shuffle(objetos) #Aqui variamos orden de los objetos
 
         for i in range(6):
