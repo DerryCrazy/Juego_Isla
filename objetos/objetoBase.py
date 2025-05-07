@@ -4,4 +4,4 @@ class ObjetoBase: #Objeto baseeee para heredar a los demas
         self.efecto = efecto # daño
 
     def interactuar(self): #Interactuar basico
-        return f"Has encontrado {self.nombre}."
+        return f"\nHas encontrado {self.nombre}."

@@ -5,4 +5,4 @@ class Peligro(ObjetoBase):
         super().__init__(nombre, efecto=-1)# se sobreescribe su iniciacion con un -1 porque es toxica como mi ex:´v
 
     def interactuar(self):# mensaje de q te hizo daño como ella:c
-        return f"Cuidao cuñao, Has encontrado {self.nombre}. Pierdes una vida"
+        return f"\nCuidao cuñao, Has encontrado {self.nombre}. Pierdes una vida"

@@ -26,7 +26,7 @@ def jugar():
             x, y = map(int, input("Ingresa coordenadas para explorar (fila columna): ").split())  # Se guarda x e y
             resultado = isla.explorar(x, y, jugador)  # Hace la exploración con parámetros
 
-            if resultado == "Llave":  # Si el jugador encuentra la llave, gana
+            if resultado == "🗝️Llave":  # Si el jugador encuentra la llave, gana
                 print("🏆")
                 break
             elif resultado == "🐊Cocodrilazo":  # Si encuentra un cocodrilo, pierde
@@ -35,9 +35,9 @@ def jugar():
 
         except ValueError:  # Si hay un error en la captura
             print("⚠️ Entrada inválida, usa números separados por espacio.")
-
+    
     print("🌴 ¡Gracias por jugar! Fin del juego.")
-
+    mostrar_mapa(isla, jugador)
 
 def menu():  # Función que maneja el menú
     while True:
